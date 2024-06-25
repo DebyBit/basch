@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BASCHUS REAL ESTATE</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	 <script>
+    $(function(){
+	
+	phasereaveal()
+	
+		function headlead() {
+		  return new Promise((resolve, reject) => {
+			resolve($("#headBrunch").load("_head.html"))
+		  });
+		}
+		async function footlead() {
+		  await headlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footBrunch").load("_foot.html"))
+		  });
+		}
+		async function footlinklead() {
+		  await footlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footLink").load("_footlink.html"))
+		  });
+		}
+		
+		async function phasereaveal() {
+		  await footlinklead()
+		  return new Promise((resolve, reject) => {
+			setTimeout(() => {
+			resolve( document.querySelector("#preloader").style.display = "none")
+			}, 3000);
+		  });
+		}
+    });
+  </script>
+  
+</head>
+<body>
+<!-- ======= Property Search Section ======= -->
+  <div class="click-closed"></div>
+<div id="headBrunch"></div>
+
+
+
+
+
+
+<main id="main">
+	<!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">The Perfect Place to Manage Your Property</h1>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="./">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Contact
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    <!-- ======= About Section ======= -->
+    <section class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 position-relative">
+            <div class="about-img-box">
+              <img src="assets/img/contact.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="sinse-box">
+              <h3 class="sinse-title">Baschus Real Estate
+                <span></span>
+                <br> Since 2017
+              </h3>
+            </div>
+          </div>
+          <div class="col-md-12 section-t8 position-relative">
+            <div class="row">
+              <div class="col-md-6 col-lg-5" style="margin-right: 40px;">
+                <img src="assets/img/about-3.jpg" alt="" class="img-fluid">
+              </div>
+              
+              <div class="col-md-6 col-lg-5 section-md-t3">
+                <div class="title-box-d">
+                  <h3 class="title-d">Contact
+                    <span class="color-d">the </span> Use
+                    
+                  </h3>
+                </div>
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-envelope"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Say Hello</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <p class="mb-1">Email.
+                        <span class="color-a">info@baschus.com</span>
+                      </p>
+					  <p class="mb-1">Call.
+                        <span class="color-a">+1 631 237 8441</span>
+                      </p>
+					  <p class="mb-1">Address.
+                        <span class="color-a">4332 Ainsdale Ct, Rapid City <br>South Dakota </span>
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+   
+
+   
+
+   
+
+  </main><!-- End #main -->
+  
+<!-- ======= Modal ======= -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The modal body is where all the text, images, and links go.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+</div>
+ <!-- ======= end Modal ======= -->
+
+
+
+
+
+
+
+
+   <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="footBrunch"></div>
+<div id="footLink"></div>
+ </body>
+
+</html>
